@@ -9,5 +9,6 @@ public class Main {
 
         transaksi.tampilkIdentitas();
         transaksi.prosesTransaksi(avanza, 2, "Andi");
+        System.out.println("========================================");
     }
 }
