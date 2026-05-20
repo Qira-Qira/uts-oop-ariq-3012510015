@@ -10,4 +10,20 @@ public abstract class Kendaraan{
         this.tarifHarian = tarifHarifan;
         this.unitKendaraan = unitKendaraan;
     }
+
+    public String getNama(){
+        return nama;
+    }
+
+    public String kondisi(){
+        return kondisi;
+    }
+
+    public double tarifHarian(){
+        return tarifHarian;
+    }
+
+    public int unitKendaraan(){
+        return unitKendaraan;
+    }
 }
