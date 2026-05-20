@@ -27,4 +27,16 @@ public abstract class Kendaraan{
         return unitKendaraan;
     }
 
+    public void setKondisi(String kondisi){
+        this.kondisi = kondisi;
+    }
+
+    public void setTarifHarian(double tarifHarian){
+        this.tarifHarian = tarifHarian;
+    }
+
+    public void setUnitKendaraan(int unitKendaraan){
+        this.unitKendaraan = unitKendaraan;
+    }
+
 }
