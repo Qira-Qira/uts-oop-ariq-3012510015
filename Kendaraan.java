@@ -67,7 +67,14 @@ public abstract class Kendaraan{
     public double hitungTotalBiaya(int hari){
         return tarifHarian * hari;
     }
-        
+
+     public void tampilInfo(){
+    System.out.println("Jenis : " + tipeKendaraan() + "\n" +
+               "Nama : " + nama + "\n" +
+               "Kondisi : " + kondisi + "\n" +
+               "Unit : " + unitKendaraan);
+   }
+   
     }
 
 }
