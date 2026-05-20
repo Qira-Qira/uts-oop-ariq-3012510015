@@ -24,4 +24,10 @@ public class Motor extends Kendaraan {
         return biayaDasar;
     }
 
+    
+    @Override
+    public String informasiTambahan() {
+        return "Jenis Motor : " + jenisMotor;
+    }
+
 }
