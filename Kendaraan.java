@@ -40,7 +40,7 @@ public abstract class Kendaraan{
     }
 
     public boolean isUnitTersedia(){
-        return unitKendaraan < 0;
+        return unitKendaraan > 0;
     }
 
 }
