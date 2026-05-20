@@ -64,6 +64,9 @@ public abstract class Kendaraan{
             return true;
         }
 
+    public double hitungTotalBiaya(int hari){
+        return tarifHarian * hari;
+    }
         
     }
 
