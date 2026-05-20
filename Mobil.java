@@ -7,4 +7,12 @@ public class Mobil extends Kendaraan {
         this.jumlahKursi = jumlahKursi;
         this.transmisi = transmisi;
     }
+
+    public int getJumlahKursi() {
+        return jumlahKursi;
+    }
+
+    public String getTransmisi() {
+        return transmisi;
+    }
 }
