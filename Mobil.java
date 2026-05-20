@@ -29,4 +29,10 @@ public class Mobil extends Kendaraan {
         }
         return biayaDasar;
     }
+
+    @Override
+    public String informasiTambahan() {
+        return "Jumlah kursi : " + jumlahKursi + "\n" +
+               "Transmisi : " + transmisi;
+    }
 }
