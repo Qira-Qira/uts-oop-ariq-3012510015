@@ -6,5 +6,7 @@ public class Main {
         Kendaraan r15 = new Motor("Yamaha R15", "Rusak", 200000, 2, "Sport");
 
         Transaksi transaksi = new Transaksi("Rina");
+
+        transaksi.tampilkIdentitas();
     }
 }
