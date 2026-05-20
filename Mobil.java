@@ -1,9 +1,13 @@
+// Implementasi Inheritance turunan dari class Kendaraan dengan parent nya itu kendaraan dan child nya itu Mobil
 public class Mobil extends Kendaraan {
+    // Implementasi Encapsulation dengan access modifier private supaya lebih aman
     private int jumlahKursi;
     private String transmisi;
 
+    // Ini adalah Constructor dari class Mobil untuk memberikan nilai awal pada Objek
     public Mobil(String nama, String kondisi, double tarifHarian, int unitKendaraan, int jumlahKursi,
             String transmisi) {
+        // Implementasi Super class dari class turunan
         super(nama, kondisi, tarifHarian, unitKendaraan);
         this.jumlahKursi = jumlahKursi;
         this.transmisi = transmisi;

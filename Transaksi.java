@@ -8,7 +8,7 @@ public class Transaksi {
     public void tampilkIdentitas() {
         System.out.println("Petugas : " + namaPetugas);
     }
-
+// Ini adalah referensi dari subclass
     public void prosesTransaksi(Kendaraan kendaraan, int hari, String namaPelanggan) {
         System.out.println("Pelanggan : " + namaPelanggan);
         kendaraan.tampilInfo();

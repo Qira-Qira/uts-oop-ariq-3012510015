@@ -1,9 +1,12 @@
+// Implementasi Abstract Class untuk membuat fungsi abstract atau mencetak sebuah blueprint untuk digunakan kembali
 public abstract class Kendaraan {
+// Implementasi Encapsulation dengan access modifier private supaya lebih aman
     private String nama;
     private String kondisi;
     private double tarifHarian;
     private int unitKendaraan;
 
+    // Ini adalah Constructor dari class Kendaraan untuk memberikan nilai awal pada Objek
     public Kendaraan(String nama, String kondisi, double tarifHarifan, int unitKendaraan) {
         this.nama = nama;
         this.kondisi = kondisi;
@@ -44,6 +47,7 @@ public abstract class Kendaraan {
     }
 
     public boolean isKondisiLayak() {
+        // Fungsi equalsIgnoreCase adalah untuk menghiraukan huruf kapital atau case sensitive
         return "Baik".equalsIgnoreCase(kondisi);
     }
 
@@ -77,6 +81,7 @@ public abstract class Kendaraan {
                 "Unit : " + unitKendaraan);
     }
 
+    // Ini adalah Abstract function, dengan syarat harus membuat class abstract terlebih dahulu, baru bisa membuat abstract function
     public abstract String tipeKendaraan();
 
     public abstract double hitungHargaAkhir(int hari);
