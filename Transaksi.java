@@ -18,7 +18,20 @@ public class Transaksi {
         System.out.println(kendaraan.informasiTambahan());
         System.out.println();
 
-        
+        if (!kendaraan.isHariSewaValid(hari)) {
+            System.out.println("Status Transaksi : Gagal");
+            System.out.println("Alasan : Jumlah hari sewa tidak valid");
+            return;
+        } else if (!kendaraan.isUnitTersedia()) {
+            System.out.println("Status Transaksi : Gagal");
+            System.out.println("Alasan : Unit kendaraan tidak tersedia");
+            return;
+        } else if (!kendaraan.isKondisiLayak()) {
+            System.out.println("Status Transaksi : Gagal");
+            System.out.println("Alasan : Kondisi kendaraan tidak layak digunakan");
+            return;
+        }
+
     }
 
 }
