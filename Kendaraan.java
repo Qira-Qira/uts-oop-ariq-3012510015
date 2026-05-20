@@ -64,16 +64,11 @@ public abstract class Kendaraan{
             return true;
         }
 
+    }
+
     public double hitungTotalBiaya(int hari){
         return tarifHarian * hari;
     }
-
-     public void tampilInfo(){
-    System.out.println("Jenis : " + tipeKendaraan() + "\n" +
-               "Nama : " + nama + "\n" +
-               "Kondisi : " + kondisi + "\n" +
-               "Unit : " + unitKendaraan);
-   }
 
     public void tampilInfo(){
     System.out.println("Jenis : " + tipeKendaraan() + "\n" +
@@ -87,7 +82,5 @@ public abstract class Kendaraan{
     public abstract double hitungHargaAkhir(int hari);
 
     public abstract String informasiTambahan();
-   
-    }
 
 }
