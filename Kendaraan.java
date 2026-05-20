@@ -39,4 +39,8 @@ public abstract class Kendaraan{
         this.unitKendaraan = unitKendaraan;
     }
 
+    public boolean isUnitTersedia(){
+        return unitKendaraan < 0;
+    }
+
 }
