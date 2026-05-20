@@ -10,5 +10,16 @@ public class Main {
         transaksi.tampilkIdentitas();
         transaksi.prosesTransaksi(avanza, 2, "Andi");
         System.out.println("========================================");
+
+        transaksi.tampilkIdentitas();
+        transaksi.prosesTransaksi(beat, 3, "Budi");
+        System.out.println("========================================");
+
+        transaksi.tampilkIdentitas();
+        transaksi.prosesTransaksi(brio, 2, "Citra");
+        System.out.println("========================================");
+
+        transaksi.tampilkIdentitas();
+        transaksi.prosesTransaksi(r15, 1, "Dina");
     }
 }
