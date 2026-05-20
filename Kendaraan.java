@@ -47,4 +47,8 @@ public abstract class Kendaraan{
         return "Baik".equalsIgnoreCase(kondisi);
     }
 
+    public boolean isHariSewaValid(int hari){
+        return hari > 0;
+    }
+
 }
