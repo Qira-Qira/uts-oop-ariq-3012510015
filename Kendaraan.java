@@ -58,7 +58,11 @@ public abstract class Kendaraan{
             return false;
         } else if (!isKondisiLayak()){
             return false;
-        } 
+        } else {
+            unitKendaraan -= 1;
+
+            return true;
+        }
 
         
     }
