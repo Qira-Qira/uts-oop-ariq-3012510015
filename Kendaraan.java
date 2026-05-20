@@ -15,15 +15,16 @@ public abstract class Kendaraan{
         return nama;
     }
 
-    public String kondisi(){
+    public String getKondisi(){
         return kondisi;
     }
 
-    public double tarifHarian(){
+    public double getTarifHarian(){
         return tarifHarian;
     }
 
-    public int unitKendaraan(){
+    public int getUnitKendaraan(){
         return unitKendaraan;
     }
+
 }
