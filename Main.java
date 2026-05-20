@@ -8,5 +8,6 @@ public class Main {
         Transaksi transaksi = new Transaksi("Rina");
 
         transaksi.tampilkIdentitas();
+        transaksi.prosesTransaksi(avanza, 2, "Andi");
     }
 }
