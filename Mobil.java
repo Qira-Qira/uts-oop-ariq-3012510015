@@ -15,4 +15,9 @@ public class Mobil extends Kendaraan {
     public String getTransmisi() {
         return transmisi;
     }
+
+    @Override
+    public String tipeKendaraan() {
+        return "Mobil";
+    }
 }
