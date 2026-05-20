@@ -1,11 +1,11 @@
 public class Transaksi {
     private String namaPetugas;
 
-    public Transaksi(String namaPetugas){
+    public Transaksi(String namaPetugas) {
         this.namaPetugas = namaPetugas;
     }
 
-    public void tampilkIdentitas(){
+    public void tampilkIdentitas() {
         System.out.println("Petugas : " + namaPetugas);
     }
 
@@ -30,15 +30,15 @@ public class Transaksi {
             System.out.println("Status Transaksi : Gagal");
             System.out.println("Alasan : Kondisi kendaraan tidak layak digunakan");
             return;
-        } else{
-            
-        kendaraan.sewa(hari);
-        double total = kendaraan.hitungHargaAkhir(hari);
+        } else {
 
-        System.out.println("Status Transaksi : Berhasil");
-        System.out.println("Keterangan : " + kendaraan.tipeKendaraan() + " Berhasil disewa");
-        System.out.println("Total Biaya : Rp" + (long) total + ".0");
-        System.out.println("Sisa Unit : " + kendaraan.getUnitKendaraan());
+            kendaraan.sewa(hari);
+            double total = kendaraan.hitungHargaAkhir(hari);
+
+            System.out.println("Status Transaksi : Berhasil");
+            System.out.println("Keterangan : " + kendaraan.tipeKendaraan() + " Berhasil disewa");
+            System.out.println("Total Biaya : Rp" + (long) total + ".0");
+            System.out.println("Sisa Unit : " + kendaraan.getUnitKendaraan());
         }
 
     }
