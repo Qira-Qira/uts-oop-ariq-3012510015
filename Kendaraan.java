@@ -1,62 +1,62 @@
-public abstract class Kendaraan{
+public abstract class Kendaraan {
     private String nama;
     private String kondisi;
     private double tarifHarian;
     private int unitKendaraan;
 
-    public Kendaraan(String nama, String kondisi, double tarifHarifan, int unitKendaraan){
+    public Kendaraan(String nama, String kondisi, double tarifHarifan, int unitKendaraan) {
         this.nama = nama;
         this.kondisi = kondisi;
         this.tarifHarian = tarifHarifan;
         this.unitKendaraan = unitKendaraan;
     }
 
-    public String getNama(){
+    public String getNama() {
         return nama;
     }
 
-    public String getKondisi(){
+    public String getKondisi() {
         return kondisi;
     }
 
-    public double getTarifHarian(){
+    public double getTarifHarian() {
         return tarifHarian;
     }
 
-    public int getUnitKendaraan(){
+    public int getUnitKendaraan() {
         return unitKendaraan;
     }
 
-    public void setKondisi(String kondisi){
+    public void setKondisi(String kondisi) {
         this.kondisi = kondisi;
     }
 
-    public void setTarifHarian(double tarifHarian){
+    public void setTarifHarian(double tarifHarian) {
         this.tarifHarian = tarifHarian;
     }
 
-    public void setUnitKendaraan(int unitKendaraan){
+    public void setUnitKendaraan(int unitKendaraan) {
         this.unitKendaraan = unitKendaraan;
     }
 
-    public boolean isUnitTersedia(){
+    public boolean isUnitTersedia() {
         return unitKendaraan > 0;
     }
 
-    public boolean isKondisiLayak(){
+    public boolean isKondisiLayak() {
         return "Baik".equalsIgnoreCase(kondisi);
     }
 
-    public boolean isHariSewaValid(int hari){
+    public boolean isHariSewaValid(int hari) {
         return hari > 0;
     }
 
-    public boolean sewa(int hari){
-        if(!isHariSewaValid(hari)){
+    public boolean sewa(int hari) {
+        if (!isHariSewaValid(hari)) {
             return false;
-        } else if (!isUnitTersedia()){
+        } else if (!isUnitTersedia()) {
             return false;
-        } else if (!isKondisiLayak()){
+        } else if (!isKondisiLayak()) {
             return false;
         } else {
             unitKendaraan -= 1;
@@ -66,16 +66,16 @@ public abstract class Kendaraan{
 
     }
 
-    public double hitungTotalBiaya(int hari){
+    public double hitungTotalBiaya(int hari) {
         return tarifHarian * hari;
     }
 
-    public void tampilInfo(){
-    System.out.println("Jenis : " + tipeKendaraan() + "\n" +
-               "Nama : " + nama + "\n" +
-               "Kondisi : " + kondisi + "\n" +
-               "Unit : " + unitKendaraan);
-   }
+    public void tampilInfo() {
+        System.out.println("Jenis : " + tipeKendaraan() + "\n" +
+                "Nama : " + nama + "\n" +
+                "Kondisi : " + kondisi + "\n" +
+                "Unit : " + unitKendaraan);
+    }
 
     public abstract String tipeKendaraan();
 
