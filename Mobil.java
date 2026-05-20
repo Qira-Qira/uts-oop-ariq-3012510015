@@ -20,4 +20,13 @@ public class Mobil extends Kendaraan {
     public String tipeKendaraan() {
         return "Mobil";
     }
+
+    @Override
+    public double hitungHargaAkhir(int hari) {
+        double biayaDasar = getTarifHarian() * hari;
+        if (jumlahKursi > 7) {
+            return biayaDasar + (biayaDasar * 0.2);
+        }
+        return biayaDasar;
+    }
 }
