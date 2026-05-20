@@ -6,7 +6,7 @@ public class Motor extends Kendaraan {
         this.jenisMotor = jenisMotor;
     }
 
-    public String getJenisMotor(){
+    public String getJenisMotor() {
         return jenisMotor;
     }
 
@@ -24,7 +24,6 @@ public class Motor extends Kendaraan {
         return biayaDasar;
     }
 
-    
     @Override
     public String informasiTambahan() {
         return "Jenis Motor : " + jenisMotor;
