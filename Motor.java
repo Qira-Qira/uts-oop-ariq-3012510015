@@ -5,4 +5,8 @@ public class Motor extends Kendaraan {
         super(nama, kondisi, tarifHarian, unitKendaraan);
         this.jenisMotor = jenisMotor;
     }
+
+    public String getJenisMotor(){
+        return jenisMotor;
+    }
 }
