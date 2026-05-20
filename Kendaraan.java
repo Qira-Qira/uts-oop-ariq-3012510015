@@ -43,4 +43,8 @@ public abstract class Kendaraan{
         return unitKendaraan > 0;
     }
 
+    public boolean isKondisiLayak(){
+        return "Baik".equalsIgnoreCase(kondisi);
+    }
+
 }
