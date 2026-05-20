@@ -74,6 +74,19 @@ public abstract class Kendaraan{
                "Kondisi : " + kondisi + "\n" +
                "Unit : " + unitKendaraan);
    }
+
+    public void tampilInfo(){
+    System.out.println("Jenis : " + tipeKendaraan() + "\n" +
+               "Nama : " + nama + "\n" +
+               "Kondisi : " + kondisi + "\n" +
+               "Unit : " + unitKendaraan);
+   }
+
+    public abstract String tipeKendaraan();
+
+    public abstract double hitungHargaAkhir(int hari);
+
+    public abstract String informasiTambahan();
    
     }
 
