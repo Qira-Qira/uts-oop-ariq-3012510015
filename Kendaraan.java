@@ -51,4 +51,16 @@ public abstract class Kendaraan{
         return hari > 0;
     }
 
+    public boolean sewa(int hari){
+        if(!isHariSewaValid(hari)){
+            return false;
+        } else if (!isUnitTersedia()){
+            return false;
+        } else if (!isKondisiLayak()){
+            return false;
+        } 
+
+        
+    }
+
 }
