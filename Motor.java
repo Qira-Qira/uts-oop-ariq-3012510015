@@ -15,5 +15,13 @@ public class Motor extends Kendaraan {
         return "Motor";
     }
 
+    @Override
+    public double hitungHargaAkhir(int hari) {
+        double biayaDasar = getTarifHarian() * hari;
+        if ("Sport".equalsIgnoreCase(jenisMotor)) {
+            return biayaDasar + (biayaDasar * 0.25);
+        }
+        return biayaDasar;
+    }
 
 }
