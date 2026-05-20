@@ -9,4 +9,11 @@ public class Motor extends Kendaraan {
     public String getJenisMotor(){
         return jenisMotor;
     }
+
+    @Override
+    public String tipeKendaraan() {
+        return "Motor";
+    }
+
+
 }
