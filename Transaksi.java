@@ -10,6 +10,14 @@ public class Transaksi {
     }
 
     public void prosesTransaksi(Kendaraan kendaraan, int hari, String namaPelanggan) {
+        System.out.println("Pelanggan : " + namaPelanggan);
+        kendaraan.tampilInfo();
+        System.out.println("Hari Sewa : " + hari);
+        System.out.println();
+        System.out.println("Informasi Tambahan:");
+        System.out.println(kendaraan.informasiTambahan());
+        System.out.println();
+
         
     }
 
